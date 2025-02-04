@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Frame</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        body {
+            background-color: black; /* Set the rest of the background to black */
+            margin: 0;
+            padding: 0;
+            color: white;
+            padding: 20px;
+        }
+
+        .frame {
+            background-color: white; 
+            color: black;
+            width: 70%;    
+            height: calc(100vh - 40px); 
+            position: fixed;
+            right: 20px;      
+            top: 20px;        
+            bottom: 20px;     
+            border-radius: 15px; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            padding: 20px;  
+        }
+    </style>
+</head>
+<body>
+    <p>Code-Assistant</p>
+    <!-- Frame Container -->
+    <div class="frame">
+        <h1>Code-Assistant</h1>
+        <p>This frame is positioned at the right of the screen, with white background, black text, rounded edges, and 70% width. The background is black except for the frame. There is some space above, below, and to the right of the frame for a better look.</p>
+        <form action="/action_page.php">
+            <input type="text" id="fname" name="fname"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+    <!-- Bootstrap JS (optional, if you need it for other components like modals, dropdowns) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
